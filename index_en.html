@@ -10,23 +10,41 @@
   <link rel="stylesheet" href="css/styles.css?v=20230722">
 </head>
 <body>
+
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
-    <a href="index.html" class="logo">
+    <a href="index_en.html" class="logo">
       <span class="logo-ju">ju</span>
       <span class="logo-mid">yoga<br>thai</span>
       <span class="logo-tagline">thai yoga massage</span>
     </a>
     <div class="nav-links">
-      <a href="index.html">HOME</a>
+      <a href="index_en.html">HOME</a>
       <a href="kontakt.html">CONTACT</a>
       <a href="index.html" class="nav-lang inactive">DE</a>
-      <a href="#" class="nav-lang">EN</a>
+      <a href="index_en.html" class="nav-lang">EN</a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="close-menu" id="close-menu" aria-label="Close menu">&times;</button>
+    <a href="index_en.html">HOME</a>
+    <a href="thaimassage.html">Thai Yoga Massage</a>
+    <a href="vinyasayoga.html">Yoga</a>
+    <a href="kurse_en.html">Courses</a>
+    <a href="galerie.html">Gallery</a>
+    <a href="workshop.html">Workshops</a>
+    <a href="about.html">About me</a>
+    <a href="kontakt.html">CONTACT</a>
+    <div class="mobile-lang-row" style="margin-top: 20px; font-size: 1.2rem; display: flex; gap: 12px; align-items: center;">
+      <a href="index.html" style="color: var(--dark);">DE</a> <span style="color: #ccc;">|</span> <a href="index_en.html" style="color: var(--orange); font-weight: bold;">EN</a>
+    </div>
+  </div>
+
   <!-- HERO -->
   <section class="hero">
     <video class="hero-video" autoplay muted loop playsinline poster="https://juyogathai.de/wp-content/uploads/2024/04/Julia-Nieper-Thaiyogamassage.jpg">
@@ -35,18 +53,26 @@
     <img class="hero-img" src="https://juyogathai.de/wp-content/uploads/2024/04/Julia-Nieper-Thaiyogamassage.jpg" alt="Julia Nieper Thai Yoga Massage" style="display:none" id="hero-fallback">
     <div class="hero-overlay"></div>
   </section>
+
   <!-- MAIN CONTENT -->
   <main>
-    <h2 class="section-title fade-up">Thai Yoga Massage and Yoga in Bielefeld and Leipzig</h2>
+    <h2 class="section-title fade-up">
+      <span style="display:block; font-size:1.15rem; font-weight:500; margin-bottom:6px; color:var(--orange);">-- Julia Nieper --</span>
+      Thai Yoga Massage and Yoga in Bielefeld and Leipzig
+    </h2>
     <div class="section-divider fade-up"></div>
+
     <div class="home-grid">
+      <!-- Card 1: Thai Yoga Massage -->
       <div class="card fade-up">
         <a href="thaimassage.html" class="card-link">
           <div class="card-img-wrap"><img src="https://juyogathai.de/wp-content/uploads/2024/04/Julia-Nieper-Thaiyogamassage.jpg" alt="Thai Yoga Massage" loading="lazy"></div>
           <h3>Thai Yoga Massage</h3>
         </a>
-        <p>With the hands you can see best, because they are the extension of the heart.</p>
+        <p>With hands you can see best, because they are the extension of the heart.</p>
       </div>
+
+      <!-- Card 2: Yoga -->
       <div class="card fade-up">
         <a href="vinyasayoga.html" class="card-link">
           <div class="card-img-wrap"><img src="https://juyogathai.de/wp-content/uploads/2024/03/Julia-Nieper-Vinyasa-Yoga-Training.jpg" alt="Yoga in nature" loading="lazy"></div>
@@ -54,23 +80,53 @@
         </a>
         <p>I love being in nature, capturing the moment, creating space, discovering beautiful chaos and finding the essential.</p>
       </div>
+
+      <!-- Card 3: Courses -->
       <div class="card fade-up">
-        <a href="kurse.html" class="card-link">
+        <a href="kurse_en.html" class="card-link">
           <div class="card-img-wrap"><img src="https://juyogathai.de/wp-content/uploads/2024/03/Julia-Nieper-Thai-Massage-Exercise-1.jpg" alt="Yoga Courses" loading="lazy"></div>
           <h3>Courses</h3>
         </a>
         <p>Find me at Spirit Holistic Health Club Bielefeld and Studio Veda, a small oasis in Leipzig city centre.</p>
       </div>
+
+      <!-- Card 4: Gallery -->
+      <div class="card fade-up">
+        <a href="galerie.html" class="card-link">
+          <div class="card-img-wrap"><img src="https://juyogathai.de/wp-content/uploads/2024/03/Julia-Nieper-Thai-Massage-Close-Up-Hands.jpg" alt="Gallery" loading="lazy"></div>
+          <h3>Gallery</h3>
+        </a>
+      </div>
+
+      <!-- Card 5: Workshops -->
+      <div class="card fade-up">
+        <a href="workshop.html" class="card-link">
+          <div class="card-img-wrap"><img src="https://juyogathai.de/wp-content/uploads/2024/04/Julia-Nieper-Thai-Massage-Exercise.jpg" alt="Workshops" loading="lazy"></div>
+          <h3>Workshops</h3>
+        </a>
+        <p>I offer workshops in Thai Yoga Massage and Yoga in various locations.</p>
+      </div>
+
+      <!-- Card 6: About me -->
+      <div class="card fade-up">
+        <a href="about.html" class="card-link">
+          <div class="card-img-wrap"><img src="https://juyogathai.de/wp-content/uploads/2024/03/Julia-Nieper-Vinyasa-Yoga.jpg" alt="About me – Julia Nieper" loading="lazy"></div>
+          <h3>About me</h3>
+        </a>
+        <p>Yoga and Architecture? To me, similar worlds…</p>
+      </div>
     </div>
   </main>
+
   <footer class="site-footer">
-    <a href="index.html" class="footer-logo">
+    <a href="index_en.html" class="footer-logo">
       <span class="logo-ju">juni</span>
       <span class="logo-mid">yoga<br>thai</span>
       <span class="logo-tagline">thai yoga massage</span>
     </a>
     <p class="footer-copy">© 2026 Julia Nieper</p>
   </footer>
+
   <script src="js/main.js"></script>
   <script>
     const video = document.querySelector('.hero-video');

@@ -814,42 +814,69 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 640px) {
-  .navbar { padding: 18px 20px; }
-  .navbar.scrolled { padding: 12px 20px; }
+  .navbar { padding: 14px 16px; }
+  .navbar.scrolled { padding: 10px 16px; }
+
+  .logo-ju { font-size: 1.35rem; }
+  .logo-mid { font-size: 0.95rem; }
+  .logo-tagline { font-size: 0.55rem; }
 
   .nav-links { display: none; }
   .hamburger { display: flex; }
 
-  .hero-logo { left: 20px; }
-  .hero-logo .logo-ju { font-size: 1.4rem; }
-  .hero-logo .logo-mid { font-size: 1.05rem; }
+  .hero-logo { left: 16px; top: 20px; }
+  .hero-logo .logo-ju { font-size: 1.3rem; }
+  .hero-logo .logo-mid { font-size: 0.95rem; }
 
-  .page-header { padding: 100px 20px 48px; }
-  .page-header h1 { font-size: 2rem; }
+  .page-header { padding: 90px 16px 40px; }
+  .page-header h1 { font-size: clamp(1.6rem, 6vw, 2.2rem); word-wrap: break-word; }
 
-  .section-title { padding: 40px 20px 20px; font-size: 1rem; }
+  .section-title { padding: 36px 16px 16px; font-size: 1.1rem; line-height: 1.4; }
 
   .home-grid {
     grid-template-columns: 1fr;
-    padding: 0 20px 60px;
+    padding: 0 16px 48px;
+    gap: 28px;
   }
 
-  .slider-section { padding: 36px 20px 0; }
-  .gallery-slider-section { padding: 36px 20px 48px; }
-  .video-section { padding: 0 20px; }
+  .slider-section { padding: 24px 16px 0; }
+  .gallery-slider-section { padding: 24px 16px 36px; }
+  .video-section { padding: 0 16px; }
 
-  .page-content { padding: 36px 20px 48px; }
+  .page-content { padding: 28px 16px 40px; font-size: 0.98rem; }
 
-  .btn-row { flex-direction: column; align-items: center; }
+  .btn-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 24px 16px;
+  }
 
-  .workshop-event { padding: 0 20px; }
-  .workshop-grid-3 { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px 18px;
+    font-size: 0.78rem;
+  }
 
-  .kurse-block { padding: 40px 20px 0; }
+  .workshop-event { padding: 0 16px; }
+  .workshop-grid-3 { grid-template-columns: repeat(3, 1fr); gap: 6px; }
 
-  .contact-section { padding: 36px 20px 48px; }
+  .kurse-block { padding: 32px 16px 0; }
 
-  .site-footer { padding: 40px 20px 28px; }
+  .contact-section { padding: 28px 16px 40px; }
 
-  .mobile-menu .close-menu { right: 20px; }
+  .site-footer { padding: 36px 16px 24px; }
+
+  .mobile-menu .close-menu { right: 20px; top: 16px; }
 }
+
+@media (max-width: 380px) {
+  .navbar { padding: 10px 12px; }
+  .logo-ju { font-size: 1.2rem; }
+  .logo-mid { font-size: 0.85rem; letter-spacing: 0.1em; }
+  .logo-tagline { font-size: 0.5rem; }
+  .section-title { font-size: 1rem; }
+  .page-content p { font-size: 0.92rem; }
+}
+
