@@ -264,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
    ============================================================ */
 .page-header {
   background: var(--beige-header);
-  padding: 120px 40px 60px;
+  padding: 140px 40px 60px;
   text-align: center;
   margin-top: 0;
 }
@@ -272,9 +272,11 @@ h1, h2, h3, h4, h5, h6 {
 .page-header h1 {
   font-family: var(--font-head);
   font-weight: 300;
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-size: clamp(1.8rem, 5vw, 3.2rem);
   color: var(--white);
   letter-spacing: 0.05em;
+  line-height: 1.25;
+  margin: 0;
 }
 
 /* ============================================================
@@ -840,8 +842,8 @@ h1, h2, h3, h4, h5, h6 {
   .hero-logo .logo-ju { font-size: 1.3rem; }
   .hero-logo .logo-mid { font-size: 0.95rem; }
 
-  .page-header { padding: 90px 16px 40px; }
-  .page-header h1 { font-size: clamp(1.6rem, 6vw, 2.2rem); word-wrap: break-word; }
+  .page-header { padding: 135px 20px 48px; }
+  .page-header h1 { font-size: clamp(1.6rem, 5.5vw, 2.2rem); word-wrap: break-word; margin: 0; }
 
   .section-title { padding: 36px 16px 16px; font-size: 1.1rem; line-height: 1.4; }
 
