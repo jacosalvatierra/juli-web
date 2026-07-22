@@ -646,41 +646,53 @@ h1, h2, h3, h4, h5, h6 {
 .kurse-block {
   max-width: 680px;
   margin: 0 auto;
-  padding: 56px 40px 0;
+  padding: 56px 20px 0;
   text-align: center;
 }
 
 .kurse-block p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--dark);
   line-height: 1.8;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.5em;
 }
 
 .kurse-block p a {
   color: var(--orange);
+  text-decoration: underline;
 }
 
-.kurse-block .kurse-address {
+.kurse-address {
   font-style: italic;
-  font-size: 0.9rem;
-  color: var(--dark);
+  font-size: 1rem;
+  margin-top: 12px;
+}
+
+.kurse-address a {
+  color: var(--dark2);
+  text-decoration: underline;
+  transition: color var(--transition);
+}
+
+.kurse-address a:hover {
+  color: var(--orange);
 }
 
 .kurse-block h4 {
   font-family: var(--font-head);
-  font-weight: 400;
-  font-size: 0.9rem;
+  font-weight: 500;
+  font-size: 1rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--dark2);
-  margin: 8px 0 4px;
+  margin: 16px 0 6px;
 }
 
 .kurse-time {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: var(--orange);
-  margin-bottom: 4px;
+  font-weight: 500;
+  margin-bottom: 6px;
 }
 
 /* ============================================================
