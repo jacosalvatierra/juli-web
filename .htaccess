@@ -6,3 +6,27 @@
         Header set Expires "0"
     </FilesMatch>
 </IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect old WordPress subfolders to new HTML pages (301 Permanent Redirect)
+    RewriteRule ^de/thaimassage/?$ /thaimassage.html [R=301,L]
+    RewriteRule ^de/vinyasayoga/?$ /vinyasayoga.html [R=301,L]
+    RewriteRule ^de/kurse/?$ /kurse.html [R=301,L]
+    RewriteRule ^de/galerie/?$ /galerie.html [R=301,L]
+    RewriteRule ^de/workshop/?$ /workshop.html [R=301,L]
+    RewriteRule ^de/about-me/?$ /about.html [R=301,L]
+    RewriteRule ^de/kontakt/?$ /kontakt.html [R=301,L]
+    RewriteRule ^de/julia-nieper/?$ /about.html [R=301,L]
+    RewriteRule ^de/?$ / [R=301,L]
+
+    RewriteRule ^en/thaimassage/?$ /thaimassage_en.html [R=301,L]
+    RewriteRule ^en/vinyasayoga/?$ /vinyasayoga_en.html [R=301,L]
+    RewriteRule ^en/kurse/?$ /kurse_en.html [R=301,L]
+    RewriteRule ^en/galerie/?$ /galerie_en.html [R=301,L]
+    RewriteRule ^en/workshop/?$ /workshop_en.html [R=301,L]
+    RewriteRule ^en/about-me/?$ /about_en.html [R=301,L]
+    RewriteRule ^en/kontakt/?$ /kontakt_en.html [R=301,L]
+    RewriteRule ^en/?$ /index_en.html [R=301,L]
+</IfModule>
